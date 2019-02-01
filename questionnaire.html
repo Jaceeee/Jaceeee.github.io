@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale1">
+      <title>MBA - Application</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
+      
+      <link rel="stylesheet" type="text/css" href="questionnaire.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+      
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+   </head>
+   <body>
+      <!-- HEADER START -->
+      <nav class="navbar navbar-expand-lg">
+         <a href="#" class="navbar-brand">
+         <img id="logo" src="logo.png" alt="Logo">
+         </a>
+         <div class="logo" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <div class="logo_name">
+                     <h6>UNIVERSITY OF THE PHILIPPINES CEBU</h6>
+                     <hr>
+                     <h6 id="college_name">SCHOOL OF MANAGEMENT</h6>
+                  </div>
+               </li>
+            </ul>
+            <span class="navbar-text">
+            Masters of Business Administration
+            </span>
+         </div>
+      </nav>
+      <div class="title_bar sticky-top">
+         <span>APPLICATION FORM</span>
+      </div>
+      <!-- HEADER END -->
+      <main class="content" role="content">
+         <section id="section1">
+            <div id="wrapper" class="row">
+               <!-- FORM STARTS HERE -->
+               <div id="section_one" class="container-fluid col-md-8">
+                  <form id="reg_form" class="reg_form">
+
+                  <!-- START OF TAB 1 -->
+                     <div class="tab">
+                        <div class="form-row">
+                           <p class="page_num">Page 1 of 5</p>
+                           <!-- ROW 1 -->
+                           <h6 class="col-md-12">1. NAME</h6>
+                           <div class="form-group col-md-4">
+                              <input class="form-control">
+                              <span class="name_label">Family Name</span>
+                           </div>
+                           <div class="form-group col-md-4">
+                              <input class="form-control">
+                              <span class="name_label">First Name</span>
+                           </div>
+                           <div class="form-group col-md-4">
+                              <input class="form-control">
+                              <span class="name_label">Middle/Maiden Name</span>
+                           </div>
+                           <!-- ROW 2 -->
+                           <div class="form-group col-md-8">
+                              <h6>2. CITIZENSHIP</h6>
+                              <select class="form-control">
+                                 <option selected>PHILIPPINES</option>
+                                 <option>OTHERS</option>
+                              </select>
+                           </div>
+                           <div class="form-group col-md-4">
+                              <h6>3. AGE (as of application date)</h6>
+                              <input class="form-control" type="number" min="0">
+                           </div>
+                           <!-- ROW 3 -->
+                           <div class="form-group col-md-8">
+                              <h6>4. PERMANENT ADDRESS</h6>
+                              <input class="form-control">
+                           </div>
+                           <div class="form-group col-md-4">
+                              <h6>5. TELEPHONE NUMBER(S)</h6>
+                              <input class="form-control" type="tel">
+                           </div>
+                           <!-- ROW 4 -->
+                           <div class="form-group col-md-8">
+                              <h6>6. PRESENT MAILING ADDRESS</h6>
+                              <input class="form-control">
+                           </div>
+                           <div class="form-group col-md-4">
+                              <h6>7. TELEPHONE NUMBER(S)</h6>
+                              <input class="form-control" type="tel">
+                           </div>
+                           <!-- ROW 5 -->
+                           <div class="form-group col-md-8">
+                              <h6>8. E-MAIL ADDRESS</h6>
+                              <input class="form-control" type="email">
+                           </div>
+                           <div class="form-group col-md-4">
+                              <h6>9. MOBILE NUMBER(S)</h6>
+                              <input class="form-control" type="tel">
+                           </div>
+                           <!-- ROW 6 -->
+                           <div class="form-group col-md-6">
+                              <h6>10. OCCUPATION</h6>
+                              <input class="form-control">
+                           </div>
+                           <div class="form-group col-md-6">
+                              <h6>11. ORGANIZATION OR INSTITUTION AFFILIATION</h6>
+                              <input class="form-control">
+                           </div>
+                           <!-- ROW 7 -->
+                           <div class="form-group col-md-4">
+                              <h6>12. CIVIL STATUS</h6>
+                              <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" id="single" value="single" name="cstatus">
+                                 <label class="form-check-label" for="single">Single</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" id="married" value="married" name="cstatus">
+                                 <label class="form-check-label" for="married">Married</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" id="other" value="other" name="cstatus">
+                                 <label class="form-check-label" for="others">Other</label>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-4">
+                              <h6>13. GENDER</h6>
+                              <input class="form-control">
+                           </div>
+                           <div class="form-group col-md-4">
+                              <h6>14. NUMBER OF DEPENDENT(S)</h6>
+                              <input class="form-control" type="number" min="0">
+                           </div>
+                           <!-- ROW 8 -->
+                           <div class="form-group col-md-12">
+                              <h6>15. DATE OF BIRTH</h6>
+                              <input class="form-control">
+                           </div>
+                           <div class="form-group col-md-12">
+                              <h6>16. PLACE OF BIRTH</h6>
+                              <input class="form-control">
+                           </div>
+                           <!-- ROW 9 -->
+                           <div class="form-group col-md-12">
+                              <h6>17. FATHER'S NAME</h6>
+                              <input class="form-control">
+                           </div>
+                           <!-- ROW 10 -->
+                           <div class="form-group col-md-12">
+                              <h6>18. MOTHER'S NAME</h6>
+                              <input class="form-control">
+                           </div>
+                           <!-- ROW 11 -->
+                           <div class="form-group col-md-9">
+                              <h6>19. NAME OF NEAREST RELATIVE TO BE CONTACTED IN CASE OF EMERGENCY</h6>
+                              <input class="form-control">
+                           </div>
+                           <div class="form-group col-md-3">
+                              <h6>20. RELATIONSHIP</h6>
+                              <input class="form-control">
+                           </div>
+                           <!-- ROW 12 -->
+                           <div class="form-group col-md-9">
+                              <h6>21. ADDRESS</h6>
+                              <input class="form-control">
+                           </div>
+                           <div class="form-group col-md-3">
+                              <h6>22. TELEPHONE NUMBER(S)</h6>
+                              <input class="form-control">
+                           </div>
+                           <!-- ROW 13 -->
+                           <div class="form-group col-md-6">
+                              <h6>23. APPLICATION FOR THE DEGREE</h6>
+                              <input class="form-control" value="Master of Business Administration" readonly="readonly">
+                           </div>
+                           <div class="form-group col-md-6" style="margin-left:0px">
+                              <h6>24. MEANS OF SUPPORT FOR THE DURATION OF THE STUDY</h6>
+                              <div class="form-group col-md-12">
+                                 <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="single" value="single" name="cstatus">
+                                    <label class="form-check-label" for="single">Self-funded</label>
+                                 </div>
+                              </div>
+                              <div class="form-group col-md-12">
+                                 <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="single" value="single" name="cstatus">
+                                    <label class="form-check-label" for="single">Scholarship, specify: </label>
+                                    <input class="form-control">
+                                 </div>
+                              </div>
+                              <div class="form-group col-md-12">
+                                 <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="single" value="single" name="cstatus">
+                                    <label class="form-check-label" for="single">Others, specify: </label>
+                                    <input class="form-control">
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- ROW 14 -->
+                           <div class="form-group col-md-12">
+                              <h6>25. COLLEGIATE EXTRACURRICULAR ACTIVITIES, IN ORDER OF IMPORTANCE TO YOU</h6>
+                              <table class="tftable">
+                              <tr>
+                                 <th colspan="2">Organization</th>
+                                 <th>Position</th>
+                                 <th>Inclusive Dates</th>
+                              </tr>
+                              <tr>
+                                 <td colspan="2" contenteditable='true'></td>
+                                 <td contenteditable='true'></td>
+                                 <td contenteditable='true'></td>
+                              </tr>
+                              <tr>
+                                 <td colspan="2" contenteditable='true'></td>
+                                 <td contenteditable='true'></td>
+                                 <td contenteditable='true'></td>
+                              </tr>
+                              <tr>
+                                 <td colspan="2" contenteditable='true'></td>
+                                 <td contenteditable='true'></td>
+                                 <td contenteditable='true'></td>
+                              </tr>
+                              <tr>
+                                 <td colspan="2" contenteditable='true'></td>
+                                 <td contenteditable='true'></td>
+                                 <td contenteditable='true'></td>
+                              </tr>
+                              <tr>
+                                 <td colspan="2" contenteditable='true'></td>
+                                 <td contenteditable='true'></td>
+                                 <td contenteditable='true'></td>
+                              </tr>
+                              <table>
+                           </div>
+                           <!-- ROW 15 -->
+                           <div class="form-group col-md-12">
+                              <h6 id="prof">26. PROFESSIONAL AND CIVIL SERVICE EXAMINATION(S) TAKEN:</h6>
+                              <table class="tftable">
+                                 <tr>
+                                    <th colspan="2">Title of Examination</th>
+                                    <th>Date Taken</th>
+                                    <th>Rating</th>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  <!-- END OF TAB 1 -->
+
+                  <!-- START OF TAB 2 -->
+                     <div class="tab">
+                        <div class="form-row">
+                           <p class="page_num">Page 2 of 5</p>
+                           <!-- ROW 1 -->
+                           <div class="form-group col-md-12">
+                              <h6>27. EDUCATIONAL ATTAINMENT</h6>
+                              <table class="tftable">
+                                 <tr>
+                                    <th colspan="4" rowspan="2">Institution/Schools attended <br/><i>(include location/country)</i></th>
+                                    <th colspan="2">Inclusive Dates of Attendance</th>
+                                    <th colspan="2" rowspan="2">Major/Minor fields</th>
+                                    <th colspan="2" rowspan="2">Highest Degree Conferred</th>
+                                    <th colspan="2" rowspan="2">Date Conferred</th>
+                                 </tr>
+                                 <tr>
+                                    <td id="from_to"><i class="from_to">From</i></td>
+                                    <td id="from_to"><i class="from_to">To</i></td>
+                                 </tr>
+                                 <tr>
+                                    <td><i>Secondary<i></td>
+                                    <td colspan="3" contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td><i>Collegiate</i></td>
+                                    <td colspan="3" contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td><i>Graduate</i></td>
+                                    <td colspan="3" contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                 </tr>
+                              </table>
+                           </div>
+                           <!-- ROW 2 -->
+                           <div class="form-group col-md-12">
+                              <h6>28. OTHER SPECIAL TRAINING OR EDUCATION RECEIVED</h6>
+                              <table class="tftable">
+                                 <tr>
+                                    <th colspan="4"><i>Title or Nature of Training</i></th>
+                                    <th colspan="2"><i>Inclusive Dates</i></th>
+                                    <th colspan="4"><i>Training Institution</i></th>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                 </tr>
+                              </table>
+                           </div>
+                           <!-- ROW 3 -->
+                           <div class="form-group col-md-12">
+                              <h6>29. SCHOLARSHIP(S) RECEIVED<i> (state the nature of the scholarship, awarding institution,
+                                 and the date and place of award)</i>
+                              </h6>
+                              <textarea class="textarea" rows="12"></textarea>
+                           </div>
+                           <!-- ROW 4 -->
+                           <div class="form-group col-md-12">
+                              <h6>30. DISTINCTION, HONORS OR AWARDS RECEIVED<i> (academic, extracurricular, business, government service, community
+                                 or others; use separate sheets if necessary)</i>
+                              </h6>
+                              <textarea class="textarea" rows="12"></textarea>
+                           </div>
+                        </div>
+                     </div>
+                  <!-- END OF TAB 2 -->
+
+                  <!-- START OF TAB 3 -->
+                     <div class="tab">
+                        <div class="form-row">
+                           <p class="page_num">Page 3 of 5</p>
+                           <!-- ROW 1 -->
+                           <div class="form-group col-md-12">
+                              <h6>31. PROFESSIONAL EXPERIENCE<i> (present and previous employment)</i></h6>
+                              <table class="tftable">
+                                 <tr>
+                                    <th colspan="3" rowspan="2">Title / Position / Brief Description of Responsibilities</th>
+                                    <th colspan="4" rowspan="2">Institution / Address / Telephone Number(s)</th>
+                                    <th colspan="2">Inclusive Engagement Dates</th>
+                                 </tr>
+                                 <tr>
+                                    <td id="from_to"><i class="from_to">From</i></td>
+                                    <td id="from_to"><i class="from_to">To</i></td>
+                                 </tr>
+                                 <tr>
+                                    <td><i>present<i></td>
+                                    <td colspan="2.8" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="4"><i>previous</i></td>
+                                    <td colspan="2.8" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="2.8" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="2.8" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="2.8" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                 </tr>
+                              </table>
+                           </div>
+                           <!-- ROW 2 -->
+                           <div class="form-group col-md-12">
+                              <h6>32. PROFESSIONAL ARTICLES AND PUBLICATIONS</h6>
+                              <table class="tftable">
+                                 <tr>
+                                    <th colspan="4"><i>Title of Publication</i></th>
+                                    <th colspan="3"><i>Journal / Magazine</i></th>
+                                    <th colspan="2"><i>Date</i></th>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="3" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="3" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="3" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="3" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="3" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                 </tr>
+                              </table>
+                           </div>
+                           <!-- ROW 3 -->
+                           <div class="form-group col-md-12">
+                              <h6>33. MEMBERSHIP IN PROFESSIONAL AND COMMUNITY ORGANIZATIONS</h6>
+                              <table class="tftable">
+                                 <tr>
+                                    <th colspan="3"><i>Organization</i></th>
+                                    <th colspan="2.5"><i>Nature of Organization</i></th>
+                                    <th colspan="2"><i>Position Held</i></th>
+                                    <th colspan="2"><i>Inclusive Dates</i></th>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="3" contenteditable='true'></td>
+                                    <td colspan="2.5" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="3" contenteditable='true'></td>
+                                    <td colspan="2.5" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="3" contenteditable='true'></td>
+                                    <td colspan="2.5" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                    <td colspan="2" contenteditable='true'></td>
+                                 </tr>
+                              </table>
+                           </div>
+                           <!-- ROW 4 -->
+                           <h6 class="col-md-12">34 LEISURE TIME ACTIVITIES</h6>
+                           <div class="form-group col-md-6">
+                              <span class="leisure_label">a. </span>
+                              <input class="form-control">
+                           </div>
+                           <div class="form-group col-md-6">
+                              <span class="leisure_label">b. </span>
+                              <input class="form-control">
+                           </div>
+                           <div id="leisure" class="form-group col-md-6">
+                              <span class="leisure_label">c. </span>
+                              <input class="form-control">
+                           </div>
+                           <div id="leisure" class="form-group col-md-6">
+                              <span class="leisure_label">d. </span>
+                              <input class="form-control">
+                           </div>
+                           <!-- ROW 5 -->
+                           <div class="form-group col-md-12">
+                              <h6>35. LEADERSHIP QUALITIES AND EXPERIENCES: PLEASE DESCRIBE ONE OR TWO SITUATIONS IN WHICH YOU FELT YOUR LEADERSHIP SKILLS WERE TESTED AND APPRECIATED. THESE SITUATIONS MAY BE TAKEN FROM FAMILY, SCHOOL, BUSINESS AND COMMUNITY LIFE. EXPLAIN BRIEFLY WHAT SIGNIFICANT LESSONS YOU LEARNED FROM THE EXPERIENCE.</h6>
+                              <textarea class="textarea" rows="15"></textarea>
+                           </div>
+                        </div>
+                     </div>
+                  <!-- END OF TAB 3 -->
+
+                  <!-- START OF TAB 4 -->
+                     <div class="tab">
+                        <div class="form-row">
+                           <p class="page_num">Page 4 of 5</p>
+                           <!-- ROW 1 -->
+                           <div class="form-group col-md-12">
+                              <h6>36. CAREER PREFERENCES: DISCUSS BRIEFLY THE VOCATION OR PROFESSION, OTHER THAN MANAGEMENT, WHICH YOU MAY HAVE SERIOUSLY CONSIDERED AND STATE THE CORRESPONDING REASONS THEREIN.</h6>
+                              <textarea class="textarea" rows="7"></textarea>
+                           </div>
+                           <!-- ROW 2 -->
+                           <div class="form-group col-md-12">
+                              <h6>37. REFERENCES: LIST DOWN THE NAMES AND ADDRESSES OF YOUR PRESENT AND PREVIOUS EMPLOYERS AND PROFESSORS YOU HAVE REQUESTED TO BE YOUR REFEREES. <br/><br/>
+                                 <i>(Request them to fill out the Recommendation for Admission. Please note that the evaluation forms should be mailed
+                                 directly by them to the Dean, School of Management, University of the Philippines Cebu, Gorordo Avenue, Lahug, Cebu City. It is your responsibility to check with your references to assure prompt submission of their recommendations.
+                                 )</i><br/><br/>
+                              </h6>
+                              <table class="tftable">
+                                 <tr>
+                                    <th></th>
+                                    <th colspan="4">Name</th>
+                                    <th colspan="3">Position</th>
+                                    <th colspan="4">Institution/Address</th>
+                                 </tr>
+                                 <tr>
+                                    <td><b>1.</b></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="3" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td><b>2.</b></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="3" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                 </tr>
+                                 <tr>
+                                    <td><b>3.</b></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                    <td colspan="3" contenteditable='true'></td>
+                                    <td colspan="4" contenteditable='true'></td>
+                                 </tr>
+                              </table>
+                           </div>
+                           <!-- ROW 3 -->
+                           <div class="form-group col-md-12">
+                              <h6>38. OTHER INFORMATION: THE SPACE BELOW IS PROVIDED FOR YOU TO DISCUSS ANY MATTER OTHER THAN THE ITEMS OF INFORMATION ALREADY REQUESTED, WHICH YOU BELIEVE WILL STRENGTHEN YOUR APPLICATION FOR ADMISSIONS TO THE MASTER OF BUSINESS ADMINISTRATION.</h6>
+                              <textarea class="textarea" rows="10"></textarea>
+                           </div>
+                           <!-- ROW 4 -->
+                           <div class="form-group col-md-12">
+                              <h6>39. IN 150 - 200 WORDS, STATE YOUR PURPOSE IN PURSUING THE DEGREE MASTER OF BUSINESS ADMINISTRATION IN UP CEBU.</h6>
+                              <textarea class="textarea" rows="14"></textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+                  <!-- END OF TAB 4 -->
+
+               </div>
+               <!-- FORM ENDS HERE -->
+
+               <div id="sticky_div" class="col-md-2">
+                  <div id="check_box">
+                     <div id="tocenter" class="scrollbar scrollbar-black bordered-black square thin">
+                        <!-- <div class="checkbox">
+                           <label>1. <input type="checkbox" value="" onclick="return false"></label>
+                        </div> -->
+                    </div>
+                  </div>
+                  <!-- <div id="buttons"> -->
+                     <button class="btn" id="back_btn" onclick="nextPrev(-1)">← &nbsp&nbsp&nbsp GO BACK</button>
+                     <button class="btn" id="next_btn" onclick="nextPrev(1)">CONTINUE &nbsp →</button>
+                  <!-- </div> -->
+               </div>
+            </div>
+         </section>
+      </main>
+      <div class="col-md-10">
+         <div id="steps" style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="step"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="step"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="step"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="step"></span>
+         </div>
+      </div>
+      <!-- <script type="text/javascript">
+         $("#section_one").load("form_page1.html"); // change lang diri kung unsa na page
+      </script> -->
+      <script src="questionnaire.js"></script>
+   </body>
+</html>
