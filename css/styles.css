@@ -92,6 +92,29 @@ main {
 	justify-content: space-between;
 }
 
+@media only screen and (max-width: 1400px) {
+	.nav-grouping {
+		justify-content: center;
+	}
+
+	.layer {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.rectangular-grouping {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.grouping-item {
+		margin-top: 40px;
+		margin-right: 0px;
+	}
+}
+
 .layer {
 	display: flex;
 	justify-content: space-between;
@@ -100,7 +123,7 @@ main {
 .layer section {
 	flex-grow: 2;
 	flex-align: flex-start;
-	margin: auto 24px;
+	margin-right: 50px;
 }
 
 .item-thumbnails {
@@ -109,7 +132,6 @@ main {
 }
 
 .grouping-item {
-	margin-left: 50px;
 	margin-right: 50px;
 	width: 33%;
 }
