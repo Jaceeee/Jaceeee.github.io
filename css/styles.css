@@ -19,10 +19,11 @@ body {
 /* nav bar left side */
 nav.left-side {
 	display: flex;
+	flex-direction: row;
 	justify-content: flex-start;
 	margin-left: 10px;
 	overflow-x: hidden;
-	align-items: flex-start;
+	align-items: center;
 }
 
 nav.left-side h2 {
@@ -33,7 +34,7 @@ nav.left-side h2 {
 nav.right-side {
 	display: flex;
 	flex-direction: row-reverse;
-	margin: 32px 64px;
+	margin: 20px 64px;
 }
 
 nav.right-side ul {
