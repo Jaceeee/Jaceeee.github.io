@@ -1,56 +1,143 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale1">
-      <title>MBA - Application</title>
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <link rel="stylesheet" type="text/css" href="welcome.css">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-   </head>
-   <body>
-      <nav class="navbar navbar-expand-lg">
-         <a href="#" class="navbar-brand">
-         <img id="logo" src="logo.png" alt="Logo">
-         </a>
-         <div class="logo" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-               <li class="nav-item">
-                  <div class="logo_name">
-                     <h6>UNIVERSITY OF THE PHILIPPINES CEBU</h6>
-                     <hr>
-                     <h6 id="college_name">SCHOOL OF MANAGEMENT</h6>
-                  </div>
-               </li>
-            </ul>
-            <span class="navbar-text">
-            Masters of Business Administration
-            </span>
-         </div>
-      </nav>
-      <div class="title_bar sticky-top">
-         <span>APPLICATION FORM</span>
-      </div>
-      <div class="jumbotron text-center scrollbar-black bordered-black square thin">
-         <h5>INSTRUCTIONS</h5>
-         <p>1. Type or print the required information.</p>
-         <p>2. Submit together with this application your Official Transcript of Records from each of the colleges you have attended. If this is not
-            possible, please request the appropriate official from your college(s) to send two copies, original and photocopy, to the College
-            Secretary, School of Management, University of the Philippines Cebu, Lahug, Cebu City. Early submission of these documents will
-            facilitate action on your application.
-         </p>
-         <p>3. Include the statement of purpose in pursuing the degree (Master of Business Administration).</p>
-         <p>4. Request from three (3) separate referees (blank form enclosed) Recommendation for Admission (to be sent directly by the referees to
-            the Dean, School of Management, University of the Philippines Cebu, Lahug, Cebu City).
-         </p>
-         <p>5. Prepare the processing fee of ₱100.00 and GPAT Fee of ₱600.00</p>
-         <a href="thankyou.html"><button class="btn" id="begin_btn">UPLOAD</button></a>
-         <a href="questionnaire.html"><button class="btn" id="begin_btn">BEGIN</button></a>
-      </div>
-   </body>
+<head>
+	<title>Jace</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css" />
+	<script src="./js/home.js"></script>
+</head>
+<body>
+	<div class="nav-grouping">
+		<nav class="right-side">
+			<ul>
+				<li><a href="">Projects</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="">Bio</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="content-grouping">
+		<div id="mySidebar" class="sidebar-content" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+			<nav class="left-side">
+				<i class="fa fa-address-card-o" aria-hidden="true"></i>
+				<h2>My Skills</h2>
+			</nav>
+			<div class="skill-grouping">
+				<h3>Information Technology</h3>
+				<ul>
+					<li>Software Engineering</li>
+					<li>Python</li>
+					<li>Javascript</li>
+				</ul>
+			</div>
+			<div class="skill-grouping">
+				<h3>Communication</h3>
+				<ul>
+					<li>Technical Writing</li>
+					<li>Poetry</li>
+					<li>Newswriting</li>
+				</ul>
+			</div>
+			<div class="skill-grouping">
+				<h3>Management</h3>
+				<ul>
+					<li>Project Management</li>
+					<li>Teamwork</li>
+					<li>Leadership</li>
+				</ul>
+			</div>
+		</div>
+		<div id="main" class="main-content">
+			<header>
+				<h1>Jace Roldan</h1>
+				<h3> Writer | Developer | Leader</h3>
+			</header>
+
+			<div class="body-content">
+				<main>
+					<div class="layer">
+						<section>
+							<h3 class="section-title">achievements</h3>
+							<div class="rectangular-grouping">
+								<article class="grouping-item">
+									<div class="item-title">
+										<h5>TOPCIT Philippines Number 1!</h5>
+									</div>
+									<img class="item-thumbnails" src="./photos/topcit.jpg">
+									<p>Awarded in Korea with other contingents from across Asia.</p>
+									<small> <a href="">Read more >></a> </small>
+								</article>
+								<article class="grouping-item">
+									<div class="item-title">
+										<h5>Organized UP Cebu ComSci Week 2020</h5>
+									</div>
+									<img class="item-thumbnails" src="./photos/comsci-week-bbcomsci.jpg">
+									<p>I was President of the UP Computer Science Guild this year.</p>
+									<small> <a href="">Read more >></a> </small>
+								</article>
+							</div>
+						</section>
+						<section>
+							<h3 class="section-title">projects</h3>
+							<div class="rectangular-grouping">
+								<article class="grouping-item">
+									<div class="item-title">
+										<h5>UP Cebu Website Redesign</h5>
+									</div>
+									<img class="item-thumbnails" src="./photos/upc-website.jpg">
+									<p>lorem ipsum dolor sit amet...</p>
+									<small> <a href="https://upcebu.edu.ph/">See more >></a> </small>
+								</article>
+								<article class="grouping-item">
+									<div class="item-title">
+										<h5>Contributor: TINTA Oble Square Website</h5>
+									</div>
+									<img class="item-thumbnails" src="./photos/tinta-upcebu-oblesquare.jpg">
+									<p>lorem ipsum dolor sit amet...</p>
+									<small> <a href="http://oblesquare.blogspot.com/">See more >> </a> </small>
+								</article>
+							</div>
+						</section>
+					</section>
+				</main>
+				<main>
+					<div class="layer">
+						<section>
+							<h3 class="section-title">write-ups</h3>
+							<div class="rectangular-grouping">
+								<article class="grouping-item">
+									<div class="item-title">
+										<h5>UP Cebu Students Decry Inimical Vandalism</h5>
+									</div>
+									<img class="item-thumbnails" src="./photos/tug-ani-1.jpg">
+									<p>Students from different student organizations in UP Cebu gathered to protest against recent vandalism on UP Cebu facade.</p>
+									<small> <a href="http://oblesquare.blogspot.com/">See more >> </a> </small>
+								</article>
+								<article class="grouping-item">
+									<div class="item-title">
+										<h5>UP Cebu contingent show unity for Prof. Dr. Rolando Tolentino</h5>
+									</div>
+									<img class="item-thumbnails" src="./photos/tug-ani-2.jpg">
+									<p>Students and faculty of UP Cebu hold protest and press conference in support of Rolando Tolentino</p>
+									<small> <a href="">Read more >></a> </small>
+								</article>
+								<article class="grouping-item">
+									<div class="item-title">
+										<h5>UP Cookout 2016 underway</h5>
+									</div>
+									<img class="item-thumbnails" src="./photos/tug-ani-3.jpg">
+									<p>UP Cebu Cookout initiates oritentations for auditions</p>
+									<small> <a href="">Read more >> </a> </small>
+								</article>
+							</div>
+						</section>
+					</div>
+				</main>			
+			</div>
+		</div>
+	</div>
+</body>
 </html>

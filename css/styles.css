@@ -1,0 +1,157 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=PT+Sans&display=swap');
+
+body {
+	background: #010140;
+	color: #f0f0f0;
+	font-family: 'PT Sans', sans-serif;
+}
+
+/* nav grouping */
+.nav-grouping {
+	display: flex;
+	flex-direction: reverse-row;
+	justify-content: flex-end;
+}
+
+
+/* nav bar left side */
+nav.left-side {
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 10px;
+	overflow-x: hidden;
+	align-items: flex-start;
+}
+
+nav.left-side h2 {
+	margin-left: 10px;
+}
+
+/* nav bar menu list */
+nav.right-side {
+	display: flex;
+	flex-direction: row-reverse;
+	margin: 32px 64px;
+}
+
+nav.right-side ul {
+	margin-right: 50px;
+	list-style: none;
+}
+
+nav.right-side ul li a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+nav.right-side ul li a:hover {
+	color: #c9c9c9;
+}
+
+nav.right-side ul li {
+	display: inline;
+	margin: 0 15px;
+}
+
+/* header */
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 10px 100px;
+}
+
+header h1, header h3 {
+	text-align: center;
+	font-family: 'Gotu', sans-serif;
+}
+
+header h1 {
+	margin: 1px;
+}
+	
+/* main content */
+
+
+main {
+	margin: 20px 10%;
+}
+
+.body-content {
+	background: #121c44;
+	margin: 10px 5%;
+	border: 2px solid black;
+	border-radius: 25px;
+}
+
+.rectangular-grouping {
+	display: flex;
+	justify-content: space-between;
+}
+
+.layer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.layer section {
+	flex-grow: 2;
+	flex-align: flex-start;
+	margin: auto 24px;
+}
+
+.item-thumbnails {
+	width: 180px;
+	height: 100px;
+}
+
+.grouping-item {
+	margin-left: 50px;
+	margin-right: 50px;
+	width: 33%;
+}
+
+.grouping-item p {
+	font-size: 12px;
+	overflow-x: wrap;
+}
+
+.grouping-item small a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+.grouping-item small a:hover {
+	color: #c9c9c9;
+}
+
+.item-title {
+	display: flex;
+	height: 70px;
+	text-overflow: ellipsis;
+
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* sidebar content */
+
+.sidebar-content {
+	height: 100%;
+	width: 40px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	padding-top: 60px; 
+	transition: 0.5s;
+	white-space: nowrap;
+	overflow-x: hidden;
+}
+
+.skill-grouping {
+	margin-left: 40px;
+}
